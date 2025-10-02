@@ -1,0 +1,40 @@
+@use "../../utils/scss/mixins.module.scss" as mixins;
+@use "../../utils/scss/defaults.module.scss" as defaults;
+
+.success-story-component {
+  @include mixins.createFlex(flex, center, center, row, 0, 2em);
+  border-radius: 1em;
+  margin-top: 2em;
+  padding: 2em;
+  .component-text {
+    width: 50%;
+  }
+  img {
+    border-radius: 1em;
+    width: 30%;
+    height: auto;
+  }
+  .stat-cards {
+    @include mixins.createFlex(flex, center, center, column, wrap, 2em);
+    .stat {
+      background: #fff;
+      padding: 10px;
+      border-radius: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .success-story-component {
+    flex-direction: column;
+    .component-text {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+    .stat-cards {
+        flex-direction: row;
+    }
+  }
+}

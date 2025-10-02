@@ -1,0 +1,24 @@
+@use "../../utils/scss/mixins.module.scss" as mixins;
+
+.cards-container {
+  .card-component {
+    width: 90%;
+    margin: auto;
+    border-radius: 0.5em;
+    padding: 2em;
+    max-width: 400px;
+    .card-content {
+      @include mixins.createFlex(flex, center, center, column, wrap, 2em);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards-container {
+    @include mixins.createFlex(flex, center, center, row, wrap, 2em);
+    .card-component {
+      max-width: none;
+      text-align: center;   
+    }
+  }
+}
