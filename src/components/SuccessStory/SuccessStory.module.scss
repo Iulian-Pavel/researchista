@@ -17,6 +17,8 @@
   .stat-cards {
     @include mixins.createFlex(flex, center, center, column, wrap, 2em);
     .stat {
+      width: 100%;
+      text-align: center;
       background: #fff;
       padding: 10px;
       border-radius: 16px;
@@ -34,7 +36,7 @@
       width: 100%;
     }
     .stat-cards {
-        flex-direction: row;
+      flex-direction: row;
     }
   }
 }
