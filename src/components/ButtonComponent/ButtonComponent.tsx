@@ -5,6 +5,7 @@ type ButtonComponentProps = {
   buttonText: string;
   textColor: string;
   borderColor?: string;
+  width?: string;
 };
 
 function ButtonComponent({
@@ -12,6 +13,7 @@ function ButtonComponent({
   buttonText,
   textColor,
   borderColor,
+  width,
 }: ButtonComponentProps) {
   return (
     <Button
@@ -20,6 +22,7 @@ function ButtonComponent({
         textTransform: "none",
         color: textColor,
         border: `1px solid ${borderColor}`,
+        width: width,
       }}
     >
       {buttonText}

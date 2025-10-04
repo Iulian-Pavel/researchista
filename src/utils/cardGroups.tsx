@@ -1,11 +1,15 @@
 import ButtonComponent from "~/components/ButtonComponent";
 
+import placeholder from "~/assets/placeholder.jpg";
+
 import generics from "~/generics.json";
 
 export const firstCardGroup = [
   {
     bgColor: "#182f75",
     titleText: generics[0].card1Title ?? "Title text",
+    titleTextColor: "#fff",
+    textColor: "#fff",
     descriptionText: generics[0].card1Description ?? "Description Text",
     mainButton: (
       <ButtonComponent
@@ -23,4 +27,64 @@ export const firstCardGroup = [
       />
     ),
   },
+];
+
+// TODO: FIX LAYOUT ISSUE WHERE CARDS ARE DISPLAYED IN A COLUMN IF NOT IN SEPARATE CONTAINERS
+//     QUICKFIX: Used separate container to display the cards in a row 
+//     although not that much of a big issue it certainly is an eye itch
+export const shopCards = [
+  {
+    bgColor: "none",
+    titleText: "Researchista Calendar 2026",
+    textColor: "gray",
+    descriptionText: generics[3].shopCalendarCardText ?? "Card Text",
+    width: "80%",
+    image: placeholder,
+    mainButton: (
+      <ButtonComponent 
+        bgColor="#182f75"
+        buttonText="Add To Cart"
+        textColor="#fff"
+        width="100%"
+      />
+    )
+  },
+];
+
+export const shopCards2 = [
+    {
+    bgColor: "none",
+    titleText: generics[3].shopCalendarCardTitle ?? "Card Title",
+    textColor: "gray",
+    descriptionText: generics[3].shopCalendarCardText ?? "Card Text",
+    width: "80%",
+    image: placeholder,
+    mainButton: (
+      <ButtonComponent 
+        bgColor="#182f75"
+        buttonText="Add To Cart"
+        textColor="#fff"
+        width="100%"
+      />
+    )
+  }
+];
+
+export const shopCards3 = [
+    {
+    bgColor: "none",
+    titleText: generics[3].shopCalendarCardTitle ?? "Card Title",
+    textColor: "gray",
+    descriptionText: generics[3].shopCalendarCardText ?? "Card Text",
+    width: "80%",
+    image: placeholder,
+    mainButton: (
+      <ButtonComponent 
+        bgColor="#182f75"
+        buttonText="Add To Cart"
+        textColor="#fff"
+        width="100%"
+      />
+    )
+  }
 ];
