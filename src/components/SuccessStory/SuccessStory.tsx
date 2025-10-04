@@ -26,6 +26,7 @@ function SuccessStory() {
             variant="h3"
             gutterBottom
             mt={2}
+            className={styles["story-heading"]}
             sx={{
               fontSize: {
                 xs: "1.5rem", // phones
@@ -41,6 +42,7 @@ function SuccessStory() {
 
           <Typography
             variant="subtitle1"
+            className={styles["story-text"]}
             sx={{
               fontSize: {
                 xs: "0.9rem", // phones

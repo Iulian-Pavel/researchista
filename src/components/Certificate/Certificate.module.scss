@@ -1,0 +1,32 @@
+@use "../../utils/scss/defaults.module.scss";
+
+.certificate {
+    border: 5px solid orange;
+    border-radius: 10px;
+    margin-top: 2em;
+    .certificate-top, .certificate-info-label {
+        font-family: defaults.$fontSpaceMono;
+        text-align: center;
+    }
+    .certificate-heading {
+        color: rgb(0, 157, 255);
+    }
+    .certificate-subheading {
+        color: gray;
+        text-align: center;
+    }
+    .certificate-info-field {
+        border: 3px dotted rgb(0, 157, 255);
+        border-radius: 10px;
+        text-align: center;
+        width: 50%;
+        margin-top: 1em;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1em;
+    }
+    .certificate-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
