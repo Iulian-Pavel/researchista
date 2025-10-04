@@ -5,9 +5,13 @@ import styles from "./CardComponent.module.scss";
 type CardData = {
   bgColor: string;
   titleText: string;
+  titleTextColor?: string;
+  textColor?: string;
   descriptionText: string;
   mainButton?: React.ReactNode;
   secondaryButton?: React.ReactNode;
+  width?: string;
+  image?: string;
 };
 
 type CardsWrapperProps = {
@@ -16,7 +20,7 @@ type CardsWrapperProps = {
 
 function CardsWrapper({ cards }: CardsWrapperProps) {
   return (
-    <Box className={styles["cards-container"]}>
+    <Box className={styles["cards-container"]} >
       {cards.map((card, index) => (
         <CardComponent
           key={index}
@@ -25,6 +29,10 @@ function CardsWrapper({ cards }: CardsWrapperProps) {
           descriptionText={card.descriptionText}
           mainButton={card.mainButton}
           secondaryButton={card.secondaryButton}
+          width={card.width}
+          image={card.image}
+          textColor={card.textColor}
+          titleTextColor={card.titleTextColor}
         />
       ))}
     </Box>

@@ -4,6 +4,7 @@ import SuccessStory from "~/components/SuccessStory";
 import ApplicationForm from "~/components/Certificate";
 
 import { firstCardGroup } from "~/utils/cardGroups";
+import ResearchistaShop from "~/components/ResearchistaShop";
 
 function Home() {
 
@@ -13,6 +14,7 @@ function Home() {
       <CardWrapper cards={firstCardGroup} />
       <SuccessStory />
       <ApplicationForm />
+      <ResearchistaShop />
     </>
   );
 }
