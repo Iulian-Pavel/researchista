@@ -1,0 +1,45 @@
+@use "../../utils/scss/defaults.module.scss" as defaults;
+@use "../../utils/scss/mixins.module.scss" as mixins;
+
+.about-component {
+  padding: 2em;
+  margin-top: 2em;
+  background-color: #1f3b9a;
+  .about-title {
+    font-family: defaults.$fontSpaceMono;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+  }
+  .about {
+    @include mixins.createFlex(flex, space-around, center, row, 0, 0);
+    color: white;
+    .about-description {
+      font-family: defaults.$fontInter;
+      width: 50%;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 2em;
+      text-align: center;
+      .about-stat-number {
+        color: #b57136;
+        font-weight: bold;
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-component {
+    border: 1px solid red;
+    .about {
+      flex-direction: column;
+      .about-description {
+        width: 100%;
+      }
+    }
+  }
+}

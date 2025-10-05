@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+import { IoMenuOutline } from "react-icons/io5";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               sx={{color: "black"}}
             >
-              <MenuIcon />
+              <IoMenuOutline />
             </IconButton>
             <Menu
               id="menu-appbar"

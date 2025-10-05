@@ -10,8 +10,10 @@ type CardData = {
   descriptionText: string;
   mainButton?: React.ReactNode;
   secondaryButton?: React.ReactNode;
-  width?: string;
+  width?: string | number;
+  height?: string | number;
   image?: string;
+  price?: number;
 };
 
 type CardsWrapperProps = {
@@ -33,6 +35,8 @@ function CardsWrapper({ cards }: CardsWrapperProps) {
           image={card.image}
           textColor={card.textColor}
           titleTextColor={card.titleTextColor}
+          price={card.price}
+          height={card.height}
         />
       ))}
     </Box>

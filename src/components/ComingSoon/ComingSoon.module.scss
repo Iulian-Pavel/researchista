@@ -1,0 +1,31 @@
+@use "../../utils/scss/mixins.module.scss" as mixins;
+@use "../../utils/scss/defaults.module.scss" as defaults;
+
+.coming-soon-component {
+    @include mixins.createFlex(flex, space-around, center, row, 0, 0);
+    margin-top: 2em;
+    .coming-soon {
+        text-align: center;
+        padding: 2em;
+        box-shadow: 1px 1px 5px #000;
+        border-radius: 10px;
+        h5 {
+            font-family: defaults.$fontSpaceMono;
+            color: #6773ac;
+        }
+        .subtitle {
+            font-family: defaults.$fontInter;
+            color: gray;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .coming-soon-component {
+        flex-direction: column;
+        .coming-soon {
+            margin-top: 2em;
+            width: 75%;
+        }
+    }
+}

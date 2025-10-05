@@ -14,8 +14,10 @@ type CardProps = {
   titleTextColor?: string;
   textColor?: string;
   descriptionText: string;
-  width?: string;
+  width?: string | number;
+  height?: string | number;
   image?: string;
+  price?: number;
 };
 
 function CardComponent({
@@ -27,19 +29,26 @@ function CardComponent({
   textColor,
   descriptionText,
   width,
+  height,
   image,
+  price,
 }: CardProps) {
   return (
     <Card
-      sx={{ backgroundColor: bgColor, width: width }}
+      sx={{ backgroundColor: bgColor, width: width, height: height }}
       className={styles["card-component"]}
     >
-      {image && <CardMedia image={image} component="img" sx={{ height: 140 }} />}
+      {image && (
+        <CardMedia image={image} component="img" sx={{ height: 140 }} />
+      )}
       <CardContent className={styles["card-content"]}>
         <Typography variant="h5" color={titleTextColor} gutterBottom>
           {titleText}
         </Typography>
         <Typography color={textColor}>{descriptionText}</Typography>
+        {price && (
+          <Typography className={styles["prices"]}>{price + "€"}</Typography>
+        )}
         {(mainButton || secondaryButton) && (
           <CardActions className={styles["card-actions"]}>
             {mainButton}

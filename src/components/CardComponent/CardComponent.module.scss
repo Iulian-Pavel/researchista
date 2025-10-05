@@ -6,8 +6,14 @@
     border-radius: 0.5em;
     padding: 2em;
     max-width: 400px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     .card-content {
       @include mixins.createFlex(flex, center, center, column, wrap, 2em);
+    }
+    .prices {
+      color: orange;
+      font-weight: bold;
+      font-size: 20px;
     }
   }
 }
@@ -17,7 +23,7 @@
     @include mixins.createFlex(flex, center, center, row, wrap, 2em);
     .card-component {
       max-width: none;
-      text-align: center;   
+      text-align: center;
     }
   }
 }

@@ -35,11 +35,12 @@ export const firstCardGroup = [
 export const shopCards = [
   {
     bgColor: "none",
-    titleText: "Researchista Calendar 2026",
+    titleText: generics[3].shopCalendarCardTitle ?? "Card Title",
     textColor: "gray",
     descriptionText: generics[3].shopCalendarCardText ?? "Card Text",
     width: "80%",
     image: placeholder,
+    price: 29.99,
     mainButton: (
       <ButtonComponent 
         bgColor="#182f75"
@@ -54,11 +55,12 @@ export const shopCards = [
 export const shopCards2 = [
     {
     bgColor: "none",
-    titleText: generics[3].shopCalendarCardTitle ?? "Card Title",
+    titleText: generics[4].shopAcademicCalendarTitle ?? "Card Title",
     textColor: "gray",
-    descriptionText: generics[3].shopCalendarCardText ?? "Card Text",
+    descriptionText: generics[4].shopAcademicCalendarText ?? "Card Text",
     width: "80%",
     image: placeholder,
+    price: 34.99,
     mainButton: (
       <ButtonComponent 
         bgColor="#182f75"
@@ -73,11 +75,12 @@ export const shopCards2 = [
 export const shopCards3 = [
     {
     bgColor: "none",
-    titleText: generics[3].shopCalendarCardTitle ?? "Card Title",
+    titleText: generics[5].shopNotebookTitle ?? "Card Title",
     textColor: "gray",
-    descriptionText: generics[3].shopCalendarCardText ?? "Card Text",
+    descriptionText: generics[5].shopNotebookText ?? "Card Text",
     width: "80%",
     image: placeholder,
+    price: 19.99,
     mainButton: (
       <ButtonComponent 
         bgColor="#182f75"

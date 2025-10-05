@@ -1,0 +1,23 @@
+@use "../../utils/scss/defaults.module.scss" as defaults;
+
+.researchers-bundle {
+    margin-top: 2em;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    .title {
+       font-family: defaults.$fontSpaceMono;
+       color: #6773ac;
+    }
+    .description {
+        font-family: defaults.$fontInter;
+        color: gray;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .researchers-bundle {
+        width: 100%;
+    }
+}
