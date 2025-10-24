@@ -7,11 +7,11 @@
     margin-left: auto;
     margin-right: auto;
     .title {
-       font-family: defaults.$fontSpaceMono;
+       font-family: defaults.$mainFont;
        color: #6773ac;
     }
     .description {
-        font-family: defaults.$fontInter;
+        font-family: defaults.$mainFont;
         color: gray;
     }
 }

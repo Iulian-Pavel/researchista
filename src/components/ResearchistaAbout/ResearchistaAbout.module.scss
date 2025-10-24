@@ -6,7 +6,7 @@
   margin-top: 2em;
   background-color: #1f3b9a;
   .about-title {
-    font-family: defaults.$fontSpaceMono;
+    font-family: defaults.$mainFont;
     text-align: center;
     color: white;
     margin-bottom: 2em;
@@ -15,7 +15,7 @@
     @include mixins.createFlex(flex, space-around, center, row, 0, 0);
     color: white;
     .about-description {
-      font-family: defaults.$fontInter;
+      font-family: defaults.$mainFont;
       width: 50%;
     }
     .about-stats {

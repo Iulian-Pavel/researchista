@@ -1,13 +1,14 @@
 import Header from "~/components/Header";
 import CardWrapper from "~/components/CardComponent";
 import SuccessStory from "~/components/SuccessStory";
-import ApplicationForm from "~/components/Certificate";
 import ResearchistaShop from "~/components/ResearchistaShop";
 import ComingSoon from "~/components/ComingSoon";
 import ResearchersBundle from "~/components/ResearchersBundle";
 import ResearchistaAbout from "~/components/ResearchistaAbout";
+import Form from "~/components/Form";
 
 import { firstCardGroup } from "~/utils/cardGroups";
+import Certificate from "~/components/Certificate";
 
 function Home() {
 
@@ -16,7 +17,8 @@ function Home() {
       <Header />
       <CardWrapper cards={firstCardGroup} />
       <SuccessStory />
-      <ApplicationForm />
+      <Certificate />
+      <Form />
       <ResearchistaShop />
       <ComingSoon />
       <ResearchersBundle />

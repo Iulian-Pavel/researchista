@@ -1,0 +1,12 @@
+@use "../../utils/scss/defaults.module.scss" as defaults;
+
+.form {
+    font-family: defaults.$mainFont;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        width: 80% !important;
+    }
+}

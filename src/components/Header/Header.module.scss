@@ -5,6 +5,6 @@
     @include mixins.createFlex(flex, center, center, 0, wrap, 10em);
     margin-bottom: 5em;
     .header-text {
-        font-family: defaults.$fontInter;
+        font-family: defaults.$mainFont;
     }
 }

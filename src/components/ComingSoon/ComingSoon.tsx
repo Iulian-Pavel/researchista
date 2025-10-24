@@ -10,7 +10,7 @@ function ComingSoon() {
   return (
     <Box className={styles["coming-soon-component"]}>
       {comingSoonInfo.map((info) => (
-        <Box className={styles["coming-soon"]}>
+        <Box className={styles["coming-soon"]} key={info.id}>
           <Chip
             label="COMING SOON"
             sx={{ color: "#fff", background: "#ffab45ff", marginBottom: "1em" }}
