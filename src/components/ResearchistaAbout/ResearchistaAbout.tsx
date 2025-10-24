@@ -23,7 +23,7 @@ function ResearchistaAbout() {
         </Box>
         <Box className={styles["about-stats"]}>
           {stats.map((stat) => (
-            <Box className={styles["about-stat"]}>
+            <Box className={styles["about-stat"]} key={stat.id}>
               <Typography className={styles["about-stat-number"]}>
                 {stat.number}
               </Typography>

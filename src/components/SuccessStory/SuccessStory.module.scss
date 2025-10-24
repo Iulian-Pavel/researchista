@@ -15,10 +15,10 @@
     height: auto;
   }
   .story-heading {
-    font-family: defaults.$fontSpaceMono;
+    font-family: defaults.$mainFont;
   }
   .story-text {
-    font-family: defaults.$fontInter;
+    font-family: defaults.$mainFont;
   }
   .stat-cards {
     @include mixins.createFlex(flex, center, center, column, wrap, 2em);

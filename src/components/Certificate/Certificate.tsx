@@ -14,7 +14,12 @@ function Certificate() {
   return (
     <Container maxWidth="sm" className={styles["certificate"]}>
       <Stack spacing={2}>
-        <Box component="img" src={medal} width={100} className={styles["certificate-image"]}/>
+        <Box
+          component="img"
+          src={medal}
+          width={100}
+          className={styles["certificate-image"]}
+        />
         <Typography
           className={`${styles["certificate-heading"]} ${styles["certificate-top"]}`}
         >
@@ -26,19 +31,24 @@ function Certificate() {
           {generics[2].certificateSubheading}
         </Typography>
         {certificate_info.map((info) => (
-          <>
+          <Box key={info.id}>
             <Typography
               variant="subtitle2"
               className={styles["certificate-info-label"]}
             >
               {info.label}
             </Typography>
-            <Typography className={styles["certificate-info-field"]}>
+            <Typography
+              className={styles["certificate-info-field"]}
+            >
               {info.field}
             </Typography>
-          </>
+          </Box>
         ))}
-        <Typography variant="subtitle2" className={styles["certificate-subheading"]}>
+        <Typography
+          variant="subtitle2"
+          className={styles["certificate-subheading"]}
+        >
           Certificate ID:RST2024-001
         </Typography>
       </Stack>
