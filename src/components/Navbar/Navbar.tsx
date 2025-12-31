@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 import logo_icon from "~/assets/logo_icon.png";
 
-const pages = ["Contact", "Media"];
+const pages = ["Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <Box
             component="img"
-            src={ logo_icon }
+            src={logo_icon}
             sx={{ display: { xs: "none", md: "flex" }, width: 67 }}
           />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -43,7 +43,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              sx={{color: "black"}}
+              sx={{ color: "black" }}
             >
               <IoMenuOutline />
             </IconButton>
@@ -64,7 +64,12 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  component="a"
+                  href="mailto:researchista@outlook.com"
+                >
                   <Typography sx={{ textAlign: "center" }}>{page}</Typography>
                 </MenuItem>
               ))}
@@ -75,13 +80,15 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               justifyContent: "center",
-              gap: "2em"
+              gap: "2em",
             }}
           >
             {pages.map((page) => (
               <Button
                 key={page}
+                component="a"
                 onClick={handleCloseNavMenu}
+                href="mailto:researchista@outlook.com"
                 sx={{ my: 2, color: "black", display: "block" }}
               >
                 {page}

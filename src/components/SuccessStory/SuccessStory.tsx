@@ -4,7 +4,7 @@ import Chip from "@mui/material/Chip";
 
 import styles from "~/components/SuccessStory/SuccessStory.module.scss";
 
-import succes_img from "~/assets/success.jpg";
+import succes_img from "~/assets/story.jpeg";
 
 import generics from "~/generics.json";
 
@@ -61,7 +61,7 @@ function SuccessStory() {
               variant="h4"
               sx={{ color: "orange", fontWeight: "bold" }}
             >
-              100K+
+              1000+
             </Typography>
             <Typography variant="subtitle2" sx={{ textAlign: "center", color: "gray" }}>
               Students reached
@@ -71,7 +71,7 @@ function SuccessStory() {
               variant="h4"
               sx={{ color: "orange", fontWeight: "bold" }}
             >
-              15
+              30
             </Typography>
             <Typography variant="subtitle2" sx={{ textAlign: "center", color: "gray" }}>
               Countries
