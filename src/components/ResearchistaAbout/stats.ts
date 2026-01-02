@@ -1,7 +1,7 @@
 export const stats = [
     {
         id: 0,
-        text: "Certified Researchers",
+        text: "Queries",
         number: "500+",
     },
     {
